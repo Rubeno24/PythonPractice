@@ -1,0 +1,53 @@
+Git Clone 
+    git clone https://name-of-the-repository-link
+        Copies code from a remote repo to your local machine
+
+Git Branch
+Allows developers to create branches to work on feature or bug fixes and eventually merge their branches to the main branch
+    git branch branch_name
+        Create a new local branch
+
+    git branch -d branch_name
+        Deletes a branch
+    
+    git checkout branch_name
+        switch to another branch
+    
+    git checkout -b branch_name
+        create a new branch and switch to it
+
+Git Status 
+    git status 
+        Gives information about a branch, what files are created deleted, what needs to be staged or unstaged
+        If there is anything to commit, push or pull
+        Or if the branch is up to date
+
+Git Add
+    git add 
+        How we include files in our next commit
+    git add --all
+        include all files that were modified in the next commit
+
+Git Commit 
+    git commit -m "Short message explaining what you devloped"
+        Its like taking a screenshot of your code a certain point in time
+        Getting them ready to be pushed to the repository
+
+Git Push
+    git push remote_branch branch_name
+        git push origin main
+            Be careful pushing to the main branch if you are working on a team
+            By default the main branch of a remote repository is named main
+            So pushing to main may delete the work that was there already
+        git push origin feature_branch
+            This will push your feature branch to a remote repository but not overide main
+            It will push to your feature branch or create one if neccessary
+
+Git pull
+    git pull origin main
+        Fetches updates from a remote repo from the specfied branch in this case main and applies them to your branch
+        This may casue local merge conflicts if someone else worked on something you worked on localy 
+
+
+
+
